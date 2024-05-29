@@ -1,0 +1,66 @@
+div{
+    width: 100px;
+    height: 100px;
+
+    background: black;
+}
+
+div:active{
+    transform: scale(0.9);
+}
+
+.red-box{
+    background: red;
+}
+
+#rgba-box{
+    background: rgba(255, 0, 255, 0.5);
+}
+
+#aqua-box{
+    background-color: aqua;
+}
+
+div:hover{
+    border: 1px solid black;
+}
+
+.red-box:hover{
+    border: 5px solid blue;
+    box-sizing: border-box;
+}
+
+input{
+    border-radius: 0;
+    border: 1px soild black;
+    color: gray;
+}
+
+input:focus{
+    border: 1px solid violet;
+    outline: none;
+}
+
+input:hover{
+    background-color: aqua;
+}
+
+button:disabled{
+    background: yellow;
+}
+
+div:first-child{
+    border: 5px solid yellow;
+}
+
+div:last-child{
+    border: 5px solid brown;
+}
+
+/* div:nth-child(2){
+    opacity: 0;
+} */
+
+div:not(:first-child){
+    margin-top: 10px;
+}
