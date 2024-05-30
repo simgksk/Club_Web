@@ -1,0 +1,7 @@
+@font-face {
+    font-family: a;
+    src: url(../Resource/star.ttf) format("trueType");
+}
+*{
+    font-family: a;
+}

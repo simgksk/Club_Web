@@ -9,7 +9,7 @@ div:active{
     transform: scale(0.9);
 }
 
-.red-box{
+.red-box {
     background: red;
 }
 
@@ -63,4 +63,8 @@ div:last-child{
 
 div:not(:first-child){
     margin-top: 10px;
+}
+
+section #a{
+    color: aqua;
 }
