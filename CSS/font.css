@@ -1,7 +1,14 @@
 @font-face {
     font-family: a;
-    src: url(../Resource/star.ttf) format("trueType");
+    src: url(../Resource/star.ttf) format("truetype");
 }
+
 *{
     font-family: a;
+}
+
+h1{
+    font-size: 100px;
+    font-weight: 600;
+    color: cornflowerblue;
 }

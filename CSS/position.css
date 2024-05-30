@@ -1,0 +1,20 @@
+section{
+    position: relative;
+    padding: 100px;
+    background-color: coral;
+}
+
+section > div{
+    width: 80px;
+    height: 80px;
+    display: inline-block;
+
+    background-color: black;
+}
+
+#point{
+    position: fixed;
+    top: 50px;
+    left: 50px;
+    right: 50px;
+}
