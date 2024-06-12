@@ -1,0 +1,36 @@
+section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px 8px;
+}
+
+input {
+    padding: 6px 8px;
+    border: 1px solid gray;
+    border-radius: 3px;
+
+    flex-grow: 2;
+
+    width: max-content;
+}
+
+#id {
+    flex-basis: 150px;
+}
+
+#password {
+    flex-basis: 130px;
+}
+
+#login {
+    color: white;
+    font-size: 13px;
+    height: 30px;
+
+    background-color: rgb(112, 195, 233);
+    border: none;
+    border-radius: 3px;
+
+    flex-grow: 1;
+    flex-basis: 100px;
+}
