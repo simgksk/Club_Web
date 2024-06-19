@@ -5,15 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="./CSS/main.css">
+    <link rel="stylesheet" href="./CSS/log.css">
+    <link rel="stylesheet" href="./CSS/aim.css">
     
     <title>AimTest</title>
 </head>
 <body>
-    <h2 class="main-title">에임 테스트</h2>
-    <main>
+    <h1 class="main-title">에임 테스트</h1>
+    
+    <main class="main-screen">
 
+        <!-- start -->
+        <section class="start-screen"style="display: none;">
+            <button id="start-btn">시작하기</button>
+        </section>
+
+        <!-- end -->
+        <section class="end-screen" >
+            <h2 class="end-title">평균 반응 속도</h2>
+            <div class="end-time"><span>500</span>ms</div>
+            <button class="end-btn">다시하기</button>
+        </section>
+
+        <!-- aim -->
+        <section class="aim-screen" style="display: none;">
+            test
+        </section>
     </main>
 
-    <button>기록 보기</button>
+    <button id="Log-show"><img src="./Resource/result.png" alt="">기록 보기</button>
 </body>
 </html>
