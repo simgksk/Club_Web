@@ -1,0 +1,16 @@
+@font-face {
+    font-family: a;
+    src: url(../Resource/April16thTTF-Promise.ttf) format("truetype");
+}
+
+*{
+    font-family: a;
+}
+
+body{
+    background-color: rgb(115, 71, 121);
+}
+
+.main-title{
+    color: #f1f1f1;
+}
