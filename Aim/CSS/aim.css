@@ -95,3 +95,19 @@
 .end-btn:hover{
     background-color: rgb(59, 179, 75);
 }
+
+.aim-screen{
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+#aim-icon{
+    position: relative;
+    width: 40px;
+    height: 40px;
+
+    top: 100%;
+    left: 100%;
+
+    transform: translate(-50% -50%);
+}
