@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- JS -->
+     <!-- 나중에 JS도 추가함  -->
+      <script src="./js/main.js"></script>
+
+    <!-- CSS -->
+    <link href='https://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/screen.css">
+    <link rel="stylesheet" href="./css/log.css">
+
+    <title>에임 테스트</title>
+</head>
+<body>
+    
+    <h1 class="main-title">에임 테스트</h1>
+    <main class="main-screen">
+        <!-- 스타트 화면 -->
+        <section class="start-screen" style="display: none;">
+            <button id="start-btn">시작하기</button>
+        </section>
+
+        <!-- 끝 화면 -->
+        <section class="end-screen" style="display: none;">
+            <h2 class="end-title">평균 반응속도</h2>
+            
+            <div class="end-time"><span>500</span>ms</div>
+            <button id="retry-btn">다시하기</button>
+        </section>
+
+        <!-- 에임 그 화면 -->
+        <section class="aim-screen">
+            <img id="aim-icon" src="./images/target.svg">
+        </section>
+    </main>
+
+    <button id="log-show"><img src="./images/result.png">기록보기</button>
+
+    <!-- 기록 창 -->
+    <section class="main-log">
+        <div class="box">
+            <!-- 헤더 -->
+            <div class="header">
+                <h1>기록</h1>
+                <button id="log-close"><img src="./images/close.svg"></button>
+            </div>
+
+            <!-- 목록 -->
+            <section class="list">
+                <div class="box">
+                    <div class="time">500<span>ms</span></div>
+                    <span class="date">2024-06-19</span>
+                </div>
+            </section>
+        </div>
+    </section>
+</body>
+</html>
