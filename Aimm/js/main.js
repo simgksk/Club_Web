@@ -4,8 +4,19 @@ let currentCount = 0;
 let startTime;
 
 function gameStart(){
+    startTime = new Date();
+    currentCount = 0;
+    
     changeScreen(2);
     setRandomAim();
+}
+
+function gameStop(){
+    changeScreen(1);
+
+    const avgTime = Math.floor((new Date() - startTime) / Aim_Amount);
+
+    $(".end-time > span").text(avgTime)
 }
 
 function setRandomAim(){
@@ -30,11 +41,19 @@ function setRandomAim(){
 }
 
 function changeScreen(screen){
-    $(".start-screen").togle(screen === 0);
-    $(".end-screen").togle(screen === 1);
-    $(".aim-screen").togle(screen === 2);
+    $(".start-screen").toggle(screen === 0);
+    $(".end-screen").toggle(screen === 1);
+    $(".aim-screen").toggle(screen === 2);
 }
 
-$(function(){
-    $(".start-btn").click(gameStart);
+$(function() {
+    $("#start-btn").click(gameStart);
+    $("#retry-btn").click(gameStart);
+
+    if(currentCount >= Aim_Amount){
+        gameStop();
+        return;
+    }
+    currentCount++;
+
 });
