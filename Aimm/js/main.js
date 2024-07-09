@@ -16,6 +16,16 @@ function gameStop(){
 
     const avgTime = Math.floor((new Date() - startTime) / Aim_Amount);
 
+    let storage = localStorage.getItem("log") || '[]';
+    storage = JSON.parse(storage);
+
+    storage.push({
+        time: avgTime,
+        create: Number(new Data())
+    });
+
+    localStorage.setItem("log", JSON.stringify(storage));
+
     $(".end-time > span").text(avgTime)
 }
 
