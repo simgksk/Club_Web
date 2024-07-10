@@ -9,6 +9,7 @@ $(function() {
         list = JSON.parse(list);
 
         list.forEach(v => {
+            $(".main-log > .box > .list")
         });
     })
 

@@ -1,0 +1,159 @@
+#log-show {
+    position: fixed;
+
+    bottom: 15px;
+    right: 18px;
+
+    color: white;
+    background-color: #5382e6;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+
+    font-size: 15px;
+    font-weight: bold;
+
+    border: none;
+    border-radius: 30px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 8px 15px;
+
+    cursor: pointer;
+
+    transition: background-color 150ms;
+}
+
+#log-show > img {
+    height: 20px;
+    margin-right: 5px;
+}
+
+#log-show:hover {
+    background-color: #456cc1;
+}
+
+.main-log {
+    position: fixed;
+    
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    backdrop-filter: blur(10px);
+    
+    background-color: rgba(0, 0, 0, 0.5);
+
+    transition: opacity 250ms;
+
+    z-index: 2;
+}
+
+.main-log.hide {
+    opacity: 0;
+}
+
+.main-log > .box {
+    position: absolute;
+    
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 500px;
+    height: 600px;
+
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    
+    background-color: #f1f1f1;
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+
+    transition: transform 250ms;
+}
+
+.main-log.hide > .box {
+    transform: translate(-50%, -50%) scale(0.9);
+}
+
+.main-log > .box > .header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-log > .box > .header > h1 {
+    font-size: 30px;
+    margin: 0;
+}
+
+.main-log > .box > .list {
+    /* border: 1px solid red; */
+    flex-grow: 1;
+
+    margin-top: 5px;
+    
+    overflow: auto;
+    
+    display: flex;
+    flex-direction: column;
+    gap: 5px 0;
+}
+
+.main-log > .box > .list > .box {
+    /* border: 1px solid blue; */
+    flex-shrink: 0;
+    height: 40px;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 10px;
+
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+/* .main-log > .box > .list > .box:not(:first-child) {
+    margin-top: 5px;
+} */
+
+.main-log > .box > .list > .box > .time {
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.main-log > .box > .list > .box > .time > span {
+    font-size: 17px;
+    font-weight: 400;
+    
+    color: rgb(95, 95, 95);
+    
+    margin-left: 3px;
+}
+
+.main-log > .box > .list > .box > .date {
+    color: gray;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+#log-close {
+    width: 45px;
+    height: 45px;
+    
+    padding: 0;
+
+    background: none;
+    border: none;
+}
+
+#log-close > img {
+    width: 100%;
+    height: 100%;
+}
