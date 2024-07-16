@@ -1,8 +1,12 @@
 const express = require("express");
+const path = require("path");
 const app = express();
 
-app.get("/buy/:market/:item/:count", function(req, res){
-    res.send(`${req.params.market}에서 ${req.params.item}을 ${req.params.count}개 살거임`);
+app.set("view engine", "ejs");
+app.set("views", path.join(__dirname, "views"));
+
+app.get("/", function(req, res){
+    res.render("index", {title: "안녕하세요", name: "we"});
 });
 
 app.listen(3000, () => {
