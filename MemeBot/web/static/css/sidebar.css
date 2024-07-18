@@ -1,0 +1,65 @@
+.sidebar-main{
+    position: fixed;
+
+    width: 230px;
+    height: 100%;
+
+    background-color: rgb(65, 51, 76);
+
+    padding: 15px;
+
+    box-sizing: border-box;
+}
+
+.sidebar-main > .sidebar-logo{
+    width: 100%;
+    padding: 10px;
+}
+
+.sidebar-main > .sidebar-menu > a > button{
+    width: 100%;
+    background-color: rgb(65, 51, 76);
+    border: none;
+    padding: 8px;
+    border-radius: 5px;
+
+    color: white;
+    font-size: 16px;
+
+}
+
+.sidebar-main > .sidebar-menu > a > button:hover{
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+.sidebar-main > .sidebar-menu > a > button.active{
+    background-color: plum;
+}
+
+.sidebar-main > .sidebar-menu > a > button > img{
+    width: 20px;
+    height: 20px
+}
+
+.sidebar-main > .footer-menu{
+    position: fixed;
+
+    left: 0;
+    bottom: 0;
+
+    display: flex;
+
+    padding: 10px;
+}
+
+.sidebar-main > .footer-menu > span{
+    color: white;
+    font-size: 18px;
+}
+
+.sidebar-main > .footer-menu > a > img{
+    width: 35px;
+    height: 35px;
+
+    display: block;
+}

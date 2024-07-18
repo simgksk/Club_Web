@@ -1,0 +1,16 @@
+.head-main{
+    width: 100%;
+    height: max-content;
+
+    padding-bottom: 5px;
+
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.head-main > h2{
+    margin: 0;
+    font-size: 20px;
+}
